@@ -382,7 +382,7 @@ header {
 .soc-list__icon {
   width: 45px;
   height: 45px;
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
 }
