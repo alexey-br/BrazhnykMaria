@@ -289,12 +289,8 @@ img {
 }
 
 .container {
-  max-width: 1000px;
   margin: 0 auto;
-}
-
-body {
-  background-color: #8ad4ef;
+  padding: 0 15px;
 }
 
 header {
@@ -305,6 +301,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1000px;
 }
 
 .navigation__list {
@@ -385,5 +382,62 @@ header {
   opacity: 0.3;
   -webkit-transition: opacity 250ms;
   transition: opacity 250ms;
+}
+
+.gallery-section {
+  background-image: url("../images/watercolor.webp");
+  background-attachment: fixed;
+}
+
+.gallery-container {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1160px) {
+  .gallery {
+    max-width: 530px;
+  }
+}
+
+@media screen and (min-width: 1161px) and (max-width: 1700px) {
+  .gallery {
+    max-width: 1060px;
+  }
+}
+
+@media screen and (min-width: 1701px) {
+  .gallery {
+    max-width: 1590px;
+  }
+}
+
+.gallery__item {
+  margin: 30px 15px;
+}
+
+.gallery__item img {
+  width: 500px;
+  height: auto;
+  -webkit-box-shadow: 0 28px 16px -26px black;
+          box-shadow: 0 28px 16px -26px black;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__item img:hover, .gallery__item img:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */
