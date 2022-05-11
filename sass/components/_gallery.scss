@@ -16,6 +16,7 @@
 
   @media screen and (max-width: 1160px) {
     max-width: 530px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1161px) and (max-width: 1700px) {
@@ -37,8 +38,11 @@
   box-shadow: 0 28px 16px -26px rgba(0, 0, 0, 1);
   transition: transform $trans-dur $trans-time-func;
 
-  &:hover,
-  &:focus {
+  @media screen and (max-width: 660px) {
+    width: 75vw;
+  }
+
+  &:hover {
     transform: scale(1.2);
   }
 }

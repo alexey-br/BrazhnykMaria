@@ -406,6 +406,9 @@ header {
 @media screen and (max-width: 1160px) {
   .gallery {
     max-width: 530px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -436,7 +439,13 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery__item img:hover, .gallery__item img:focus {
+@media screen and (max-width: 660px) {
+  .gallery__item img {
+    width: 75vw;
+  }
+}
+
+.gallery__item img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
