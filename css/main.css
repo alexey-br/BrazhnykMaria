@@ -355,8 +355,8 @@ body {
 }
 
 .navigation__icon:hover, .navigation__icon:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .soc-list {
