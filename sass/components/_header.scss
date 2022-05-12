@@ -43,14 +43,13 @@ header {
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    transform: translateY(20px);
   }
 }
 
 .soc-list {
   display: flex;
   justify-content: space-between;
-  // margin: 10px 0 10px 10px;
 }
 
 .soc-list__item:not(:last-child) {
