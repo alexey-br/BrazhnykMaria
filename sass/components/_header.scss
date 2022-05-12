@@ -30,21 +30,25 @@ header {
 }
 
 .navigation__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.navigation__icon {
-  width: 150px;
-  height: auto;
-
   transition: transform $trans-dur $trans-time-func;
 
   &:hover,
   &:focus {
     transform: translateY(20px);
   }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &.current {
+    transform: translateY(20px);
+  }
+}
+
+.navigation__icon {
+  width: 150px;
+  height: auto;
 }
 
 .soc-list {
