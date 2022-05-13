@@ -1,40 +1,72 @@
 .gallery-container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 900px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .gallery {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  //   margin: -15px;
 
-  @media screen and (max-width: ($img-width * 2 + $img-margin * 4 + 100px)) {
-    max-width: ($img-width + $img-margin * 2);
-    justify-content: center;
+  // @media screen and (max-width: ($img-width * 2 + $img-margin * 4 + 100px)) {
+  //   max-width: ($img-width + $img-margin * 2);
+  //   justify-content: center;
+  // }
+
+  @media screen and (max-width: 899px) {
+    max-width: 620px;
   }
 
-  @media screen and (min-width: ($img-width * 2 + $img-margin * 4 + 101px)) and (max-width: ($img-width * 3 + $img-margin * 6 + 100px)) {
-    max-width: ($img-width * 2 + $img-margin * 4);
+  @media screen and (min-width: 900px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -30px;
   }
 
-  @media screen and (min-width: ($img-width * 3 + $img-margin * 6 + 101px)) {
-    max-width: ($img-width * 3 + $img-margin * 6);
+  @media screen and (min-width: 900px) and (max-width: 1499px) {
+    max-width: 1100px;
+  }
+
+  @media screen and (min-width: 1500px) and (max-width: 1899px) {
+    max-width: 1660px;
+  }
+
+  @media screen and (min-width: 2060px) {
+    max-width: 2220px;
   }
 }
 
 .gallery__item {
-  margin: $img-margin;
+  margin: 10%;
+
+  @media screen and (min-width: 900px) {
+    margin: 30px;
+    flex-basis: calc((100% - 120px) / 2);
+  }
+
+  @media screen and (min-width: 1500px) {
+    margin: 30px;
+    flex-basis: calc((100% - 180px) / 3);
+  }
+
+  @media screen and (min-width: 1900px) {
+    margin: 30px;
+    flex-basis: calc((100% - 240px) / 4);
+  }
 }
 
 .gallery__item img {
-  width: $img-width;
+  max-width: 500px;
   height: auto;
   box-shadow: 0 28px 16px -26px rgba(0, 0, 0, 1);
   transition: transform $trans-dur $trans-time-func;
 
   @media screen and (max-width: 660px) {
-    width: 75vw;
+    width: 100%;
   }
 
   &:hover {
