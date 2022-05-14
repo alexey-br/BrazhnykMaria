@@ -65,6 +65,8 @@
   box-shadow: 0 28px 16px -26px rgba(0, 0, 0, 1);
   transition: transform $trans-dur $trans-time-func;
 
+  image-rendering: pixelated;
+
   @media screen and (max-width: 660px) {
     width: 100%;
   }
