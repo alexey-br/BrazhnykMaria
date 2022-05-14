@@ -1,6 +1,6 @@
 .gallery-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 
   @media screen and (min-width: 900px) {
@@ -19,6 +19,7 @@
 
   @media screen and (max-width: 899px) {
     max-width: 620px;
+    margin: -20px;
   }
 
   @media screen and (min-width: 900px) {

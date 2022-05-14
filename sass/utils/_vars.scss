@@ -4,3 +4,12 @@ $trans-time-func: cubic-bezier(0.4, 0, 0.2, 1);
 $img-width: 500px;
 $img-scale: 1.2;
 $img-margin: 30px;
+
+$brk-point-mobile: 480px;
+$brk-point-mobile-: $brk-point-mobile - 1px;
+
+$brk-point-tablet: 768px;
+$brk-point-tablet-: $brk-point-tablet - 1px;
+
+$brk-point-desktop: 1200px;
+$brk-point-desktop-: $brk-point-desktop - 1px;

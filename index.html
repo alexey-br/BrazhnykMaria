@@ -17,103 +17,77 @@
           </svg>
         </a>
 
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item current">
-              <a class="navigation__link" href="./index.html"
-                ><img class="navigation__icon" src="./images/zira.png" alt="азбука"
-              /></a>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40">
+            <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+            <use class="menu-button__icon-cross" href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="./alphabet.html"
+                  ><img class="navigation__icon" src="./images/zira.png" alt="азбука"
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./letters.html"
+                  ><img class="navigation__icon" src="./images/abc.png" alt="азбука"
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./paintings.html"
+                  ><img class="navigation__icon" src="./images/easel.png" alt="азбука"
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./gallery.html"
+                  ><img class="navigation__icon" src="./images/palette.png" alt="азбука"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="soc-list list">
+            <li class="soc-list__item">
+              <a href="mailto:mariya.zhukova90@ukr.net" class="soc-list__link">
+                <svg class="soc-list__icon">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+              </a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./gallery.html"
-                ><img class="navigation__icon" src="./images/abc.png" alt="азбука"
-              /></a>
+            <li class="soc-list__item">
+              <a
+                href="https://www.coroflot.com/MariyaZhukova"
+                class="soc-list__link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="soc-list__icon">
+                  <use href="./images/icons.svg#coroflot"></use>
+                </svg>
+              </a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./gallery-1.html"
-                ><img class="navigation__icon" src="./images/Palette.png" alt="азбука"
-              /></a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./gallery-2.html"
-                ><img class="navigation__icon" src="./images/zira.png" alt="азбука"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="soc-list list">
-          <li class="soc-list__item">
-            <a href="mailto:mariya.zhukova90@ukr.net" class="soc-list__link">
-              <svg class="soc-list__icon">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="soc-list__item">
-            <a
-              href="https://www.coroflot.com/MariyaZhukova"
-              class="soc-list__link"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <svg class="soc-list__icon">
-                <use href="./images/icons.svg#coroflot"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="soc-list__item">
-            <a
-              href="https://www.youtube.com/"
-              class="soc-list__link"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <svg class="soc-list__icon">
-                <use href="./images/icons.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="gallery-section">
-        <div class="gallery-container container">
-          <ul class="gallery list">
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-1.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-2.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-3.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-4.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-5.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-6.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-7.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-8.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-9.jpg" alt="картина" />
-            </li>
-            <li class="gallery__item" data-aos="fade-up">
-              <img src="./images/portfolio/painting-10.jpg" alt="картина" />
+            <li class="soc-list__item">
+              <a
+                href="https://www.youtube.com/"
+                class="soc-list__link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="soc-list__icon">
+                  <use href="./images/icons.svg#youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </div>
+    </header>
+    <main></main>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
