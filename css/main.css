@@ -312,8 +312,8 @@ body {
 }
 
 .logo__icon {
-  width: 105px;
-  height: 50px;
+  width: 48px;
+  height: 100px;
 }
 
 .navigation__list {
@@ -473,6 +473,7 @@ body {
   height: auto;
   -webkit-box-shadow: 0 28px 16px -26px black;
           box-shadow: 0 28px 16px -26px black;
+  border-radius: 2px;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
