@@ -26,4 +26,10 @@ img {
 body {
   background-image: url('../images/white-waves.webp');
   background-attachment: fixed;
+
+  @media screen and (max-width: $brk-point-tablet-) {
+    &.is-open {
+      overflow-y: hidden;
+    }
+  }
 }

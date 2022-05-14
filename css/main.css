@@ -298,6 +298,12 @@ body {
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 767px) {
+  body.is-open {
+    overflow-y: hidden;
+  }
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,7 +475,7 @@ body {
 @media screen and (max-width: 899px) {
   .gallery {
     max-width: 620px;
-    margin: -20px;
+    margin: -10px;
   }
 }
 
