@@ -5,17 +5,17 @@ header {
 .header-container {
   padding: 15px 15px 5px;
 
-  @media screen and (min-width: 1050px) and (max-width: 1559px) {
-    max-width: 1020px - 30px;
+  @media screen and (min-width: 1050px) {
+    padding: 15px 30px 5px;
   }
 
-  @media screen and (min-width: 1560px) and (max-width: 2069px) {
-    max-width: 1530px - 30px;
-  }
+  // @media screen and (min-width: 1560px) and (max-width: 2069px) {
+  //   max-width: 1530px - 30px;
+  // }
 
-  @media screen and (min-width: 2070px) {
-    max-width: 2040px - 30px;
-  }
+  // @media screen and (min-width: 2070px) {
+  //   max-width: 2040px - 30px;
+  // }
 }
 
 .mobile-nav {
@@ -65,7 +65,7 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     opacity: 0;
     transform: scale(0.8);
