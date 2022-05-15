@@ -11,20 +11,34 @@
   <body data-menu-body>
     <header>
       <div class="header-container container">
-        <a class="logo" href="./index.html">
-          <svg class="logo__icon">
-            <use href="./images/icons.svg#logo"></use>
-          </svg>
-        </a>
+        <div class="mobile-nav">
+          <a class="logo" href="./index.html">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
 
-        <button type="button" class="menu-button" data-menu-button>
-          <svg width="40" height="40">
-            <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-            <use class="menu-button__icon-cross" href="./images/icons.svg#cross"></use>
-          </svg>
-        </button>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
+              <use class="menu-button__icon-cross" href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
 
-        <div class="menu-container" data-menu>
+        <div class="menu-container" id="menu-container" data-menu>
+          <a class="logo" href="./index.html">
+            <svg class="logo__icon">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
@@ -86,7 +100,9 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <p class="page-name">Главная страница</p>
+    </main>
     <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

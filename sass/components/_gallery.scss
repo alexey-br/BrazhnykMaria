@@ -1,77 +1,50 @@
 .gallery-container {
-  padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
-
-  @media screen and (min-width: 900px) {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
 }
 
 .gallery {
   margin: 0 auto;
+  text-align: center;
 
-  // @media screen and (max-width: ($img-width * 2 + $img-margin * 4 + 100px)) {
-  //   max-width: ($img-width + $img-margin * 2);
-  //   justify-content: center;
-  // }
-
-  @media screen and (max-width: 899px) {
-    max-width: 620px;
-    margin: -10px;
-  }
-
-  @media screen and (min-width: 900px) {
-    display: inline-flex;
+  @media screen and (min-width: 1050px) {
+    display: flex;
     flex-wrap: wrap;
-    margin: -30px;
+    margin-top: 30px;
   }
 
-  @media screen and (min-width: 900px) and (max-width: 1499px) {
-    max-width: 1100px;
+  @media screen and (min-width: 1050px) and (max-width: 1559px) {
+    max-width: 1020px;
   }
 
-  @media screen and (min-width: 1500px) and (max-width: 1899px) {
-    max-width: 1660px;
+  @media screen and (min-width: 1560px) and (max-width: 2069px) {
+    max-width: 1530px;
   }
 
-  @media screen and (min-width: 2060px) {
-    max-width: 2220px;
+  @media screen and (min-width: 2070px) {
+    max-width: 2040px;
   }
 }
 
 .gallery__item {
-  margin: 10%;
+  display: inline-block;
 
-  @media screen and (min-width: 900px) {
-    margin: 30px;
-    flex-basis: calc((100% - 120px) / 2);
+  @media screen and (max-width: 449px) {
+    margin: 7%;
   }
 
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 450px) {
     margin: 30px;
-    flex-basis: calc((100% - 180px) / 3);
-  }
-
-  @media screen and (min-width: 1900px) {
-    margin: 30px;
-    flex-basis: calc((100% - 240px) / 4);
   }
 }
 
 .gallery__item img {
-  max-width: 500px;
+  max-width: 450px;
   height: auto;
   box-shadow: 0 28px 16px -26px rgba(0, 0, 0, 1);
   border-radius: 2px;
   transition: transform $trans-dur $trans-time-func;
 
-  image-rendering: pixelated;
-
-  @media screen and (max-width: 660px) {
-    width: 100%;
-  }
+  // image-rendering: pixelated;
 
   &:hover {
     transform: scale($img-scale);

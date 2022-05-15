@@ -12,5 +12,11 @@
     mobileMenuRef.classList.toggle('is-open');
 
     mobileMenuBody.classList.toggle('is-open');
+
+    // window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    //   if (!e.matches) return;
+    //   mobileMenuRef.classList.remove('is-open');
+    //   menuBtnRef.setAttribute('aria-expanded', false);
+    //   bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
