@@ -26,6 +26,12 @@ header {
   }
 }
 
+.logo {
+  @media screen and (min-height: 540px) {
+    z-index: 2;
+  }
+}
+
 .logo__icon {
   width: 48px;
   height: 100px;
