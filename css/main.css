@@ -365,9 +365,8 @@ body {
 }
 
 .logo__icon {
-  width: 48px;
-  height: 100px;
-  fill: rgb(162, 32, 15);
+  width: auto;
+  height: 70px;
 }
 
 .menu-button {
