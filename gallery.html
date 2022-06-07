@@ -82,7 +82,7 @@
             </li>
             <li class="soc-list__item">
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/channel/UCxuw9Wdpg4tkToY9SBAt-ow/featured"
                 class="soc-list__link"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -97,8 +97,24 @@
       </div>
     </header>
     <main>
-      <p class="page-name">Галерея</p>
+      <section class="gallery-section">
+        <div class="gallery-container container">
+          <ul class="gallery list">
+            <li class="gallery__item" data-aos="fade-up">
+              <img
+                srcset="./images/gallery/gallery-1.jpg 1x, ./images/gallery/gallery-1@2x.jpg 2x"
+                src="./images/gallery/gallery-1.jpg"
+                alt="картина"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
