@@ -43,8 +43,8 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: top;
   transition: transform $trans-dur $trans-time-func;
-  // image-rendering: pixelated;
 
   &:hover {
     transform: scale($img-scale);
