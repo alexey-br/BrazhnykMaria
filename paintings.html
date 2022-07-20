@@ -62,7 +62,7 @@
 
           <ul class="soc-list list">
             <li class="soc-list__item">
-              <a href="mailto:mariya.zhukova90@ukr.net" class="soc-list__link">
+              <a href="mailto:info@brazhnykmaria.com" class="soc-list__link" data-open-modal>
                 <svg class="soc-list__icon">
                   <use href="./images/icons.svg#mail"></use>
                 </svg>
@@ -184,7 +184,47 @@
         </div>
       </section>
     </main>
-    <script src="./js/menu.js"></script>
+
+    <!-- модальное окно -->
+    <div class="backdrop backdrop--is-hidden" data-contact>
+      <div class="backdrop__modal">
+        <h2 class="backdrop__modal-title">Contact</h2>
+
+        <!-- форма отправки сообщения -->
+        <form
+          name="contact"
+          class="contact"
+          action="https://formsubmit.co/info@brazhnykmaria.com"
+          method="POST"
+        >
+          <div class="contact__pers-data-container">
+            <label class="contact__field">
+              <span class="contact__field-lable">Name</span>
+              <input type="text" name="name" class="contact__input" required />
+            </label>
+
+            <label class="contact__field">
+              <span class="contact__field-lable">Email</span>
+              <input type="email" name="email" class="contact__input" required />
+            </label>
+          </div>
+
+          <label class="contact__field contact__field--last">
+            <span class="contact__field-lable">Message</span>
+            <textarea name="massege" class="contact__input contact__input--textarea" required></textarea>
+          </label>
+
+          <button type="submit" class="contact-submit">Send</button>
+
+          <input type="hidden" name="_subject" value="Message from MariaBrazhnyk web site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="http://brazhnykmaria.com/" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/contact.js" type="module"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
