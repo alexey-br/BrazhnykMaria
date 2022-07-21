@@ -335,6 +335,10 @@ body {
   font-size: 60px;
 }
 
+.lock-scroll {
+  overflow-y: hidden;
+}
+
 .header-container {
   padding: 15px 15px 5px;
 }

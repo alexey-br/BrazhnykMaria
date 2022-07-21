@@ -10,6 +10,8 @@ function onOpenContactModalClick(e) {
     contactModalRef.classList.remove('backdrop--is-hidden');
   }
 
+  document.body.classList.add('lock-scroll');
+
   contactModalRef.addEventListener('click', onContactModalClose);
   document.addEventListener('keydown', onContactModalEscClose);
 }
@@ -28,6 +30,8 @@ function closeContactModal() {
   if (!contactModalRef.classList.contains('backdrop--is-hidden')) {
     contactModalRef.classList.add('backdrop--is-hidden');
   }
+
+  document.body.classList.remove('lock-scroll');
 
   contactModalRef.removeEventListener('click', onContactModalClose);
   document.removeEventListener('keydown', onContactModalEscClose);
