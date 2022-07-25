@@ -1,16 +1,20 @@
 .hero-section {
-    height: calc(100vh - 125px);
-    padding: 15px;
-    // text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 125px);
+  padding: 15px;
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/mariia_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: bottom;
 }
 
 .main-img {
-    // display: inline-block;
-    // height: 100%;
-    width: auto;
-    max-height: 100%;
-    // opacity: 0.1;
+  // display: inline-block;
+  // height: 100%;
+  width: auto;
+  max-height: 100%;
+  // opacity: 0.1;
 }
