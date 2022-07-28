@@ -1,14 +1,4 @@
 const paintingsGalleryData = [
-  // {
-  //   original: './images/portfolio/painting-1.jpg',
-  //   original2x: './images/portfolio/painting-1.jpg',
-  //   description: 'картина',
-  // },
-  // {
-  //   original: './images/portfolio/painting-2.jpg',
-  //   original2x: './images/portfolio/painting-2.jpg',
-  //   description: 'картина',
-  // },
   {
     original: './images/portfolio/painting-3.jpg',
     original2x: './images/portfolio/painting-3@2x.jpg',
@@ -96,26 +86,11 @@ const paintingsGalleryData = [
     original2x: './images/portfolio/painting-6@2x.jpg',
     description: 'картина',
   },
-  // {
-  //   original: './images/portfolio/painting-7.jpg',
-  //   original2x: './images/portfolio/painting-7.jpg',
-  //   description: 'картина',
-  // },
-  // {
-  //   original: './images/portfolio/painting-8.jpg',
-  //   original2x: './images/portfolio/painting-8.jpg',
-  //   description: 'картина',
-  // },
   {
     original: './images/portfolio/painting-9.jpg',
     original2x: './images/portfolio/painting-9@2x.jpg',
     description: 'картина',
   },
-  // {
-  //   original: './images/portfolio/painting-10.jpg',
-  //   original2x: './images/portfolio/painting-10.jpg',
-  //   description: 'картина',
-  // },
   {
     original: './images/portfolio/painting-s-11.jpg',
     original2x: './images/portfolio/painting-s-11@2x.jpg',
