@@ -23,5 +23,8 @@
     "parcel": "^2.6.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.10.3"
   }
 }

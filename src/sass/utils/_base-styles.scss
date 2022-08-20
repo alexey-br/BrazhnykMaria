@@ -7,7 +7,7 @@ p {
   margin: 0;
 }
 
-.list {
+ul {
   list-style-type: none;
 }
 
@@ -41,6 +41,8 @@ body {
   background-image: url('../images/white-waves.webp');
   background-attachment: fixed;
 
+  overflow-y: scroll;
+
   @media screen and (max-width: $brk-point-tablet-) {
     &.is-open {
       overflow-y: hidden;
@@ -64,4 +66,8 @@ body {
 
 .lock-scroll {
   overflow-y: hidden;
+}
+
+.section {
+  padding: 15px 20px 20px;
 }
