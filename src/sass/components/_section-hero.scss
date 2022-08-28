@@ -1,20 +1,49 @@
-.hero-section {
-  height: calc(100vh - 125px);
-  padding: 15px;
-  // text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/mariia_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 90%;
-  background-position: bottom;
+.hero-img-containet {
+  padding-top: 15px;
+  text-align: center;
+  height: calc(100vh - 130px);
 }
 
-.main-img {
-  // display: inline-block;
-  // height: 100%;
-  width: auto;
+.hero-img {
+  display: inline-block;
   max-height: 100%;
-  // opacity: 0.1;
+  width: auto;
+  cursor: pointer;
+
+  transition: transform $trans-dur $trans-time-func;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.about__container {
+  overflow-y: auto;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  padding: 30px;
+  background-color: #fff;
+  color: $color-modal;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.1em;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+
+  transition: transform $trans-dur $trans-time-func;
+
+  width: calc(100% - 30px);
+  max-width: 900px;
+  max-height: calc(100vh - 30px);
+}
+
+.about__text {
+  margin-bottom: 15px;
+}
+
+.about__info__item:not(:last-child) {
+  margin-bottom: 10px;
 }

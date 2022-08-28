@@ -10,7 +10,6 @@
     <meta name="description" content="" />
     <title>Мария Бражник</title>
     <link rel="stylesheet" href="./sass/main.scss" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body data-menu-body>
     <header>
@@ -51,7 +50,7 @@
                   ><img class="navigation__icon" src="./images/abc.png" alt="азбука"
                 /></a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-post>
                 <a class="navigation__link" href="./postcards.html"
                   ><img class="navigation__icon" src="./images/postcard.png" alt="азбука"
                 /></a>
@@ -108,6 +107,56 @@
     <main>
       <section class="hero-section section">
         <h1 class="visually-hidden">Герой</h1>
+        <div class="hero-img-containet">
+          <img class="hero-img" src="./images/mariia_bg.jpg" alt="фото Марии" title="About Maria" />
+        </div>
+
+        <div class="backdrop backdrop--is-hidden" data-about>
+          <div class="about__container">
+            <p class="about__text">About Maria:</p>
+            <p class="about__text">
+              Maria inherited a talent from her mother and grandmother, who’d been caring for her from the
+              first days of Maria’s life. She got started with practice in painting art from early childhood,
+              honing her mastery over the years. Maria’s paintings, created in authentic style of Hryhory
+              Synytsia and Maria Prymachenko school is a tribute to the Ukrainian traditions, culture and
+              history and a powerful sign of her unbreakable bond with her native land and nation. Maria’s
+              paints are deeply emotional and full of ethnic vibes and colours. You could find her 40 recent
+              artworks on
+              <a href="http://www.brazhnykmaria.com/">http://www.brazhnykmaria.com/</a>. Maria’s first art
+              exhibition happened in Dyrdyn village, Cherkasy Raion, Ukraine, when she was just an 8 years old
+              child.
+            </p>
+            <p class="about__text">
+              Maria practices different painting techniques in her works: watercolour, pastel, acrylic paint,
+              but the preferable one is a fresco, made in coloured acrylic plaster.She mastered that style in
+              2010-2013 years. Since that time, her desire to create new artworks, inspired with ethnic
+              mythology, native landscapes and culture, just become ever stronger. The first, commercially
+              successful artwork is “A Rose” (60x80sm). For the 10 years, Maria has created in fresco
+              technique more than 100 artworks, many of those have found their place in homes of art
+              collectors from Europe and Ukraine.The latest works have been presented to the public in a Bucha
+              Children's Clinic (bas-relief work in cooperation with A. Nedashkivska), Bucha Epicentr (more
+              than 20 artworks) and on exhibitions of Kyiv city (about 15 artworks). Many of Maria’s works
+              could be seen on the walls of different government and private buildings.
+            </p>
+            <p class="about__text">
+              One one of remarkable works, created by Maria, is a “Alphabet for toddlers”, which includes 36
+              unique pastel paints. This collection gives to babies great ability to learn reading in joyful
+              and attractive way, forms their ethnic bond and identity. This work was presented to public on
+              “Ukrainian code. Alphabet”exhibition in August-September 2022 in Maria’s native region: towns
+              Horodyszcze and Cherkasy, in addition it was exhibited in Bucha, the town where Maria has been
+              living for many years. That work has been also published as a book for kids 3-5 years old for
+              studying ukrainian alphabet.
+            </p>
+            <ul class="about__info">
+              <li class="about__info__item">
+                Main themes of artworks: Existence, Nature, Contemplation, Emotions
+              </li>
+              <li class="about__info__item">Features of an artist: feeling of colours and precise drawing</li>
+              <li class="about__info__item">Style: Romanticism, Abstract art, Symbolism</li>
+              <li class="about__info__item">Life Credo: inspire others to be kind.</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -149,6 +198,7 @@
       </div>
     </div>
 
+    <script src="./js/about-modal.js" type="module"></script>
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/contact.js" type="module"></script>
   </body>

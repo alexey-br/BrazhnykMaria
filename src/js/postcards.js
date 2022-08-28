@@ -2,10 +2,10 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import * as cardsLists from './postcards-list';
 
-let gallery = new SimpleLightbox('.post-gallery a');
+let gallery = new SimpleLightbox('.gallery a');
 
 const gallerySelectorRef = document.querySelector('.post-nav__list');
-const galleryRef = document.querySelector('.post-gallery');
+const galleryRef = document.querySelector('.gallery');
 
 gallerySelectorRef.addEventListener('click', onGallerySelect);
 
@@ -27,10 +27,10 @@ function createGalleryMarkup(cardsList) {
   return cardsList
     .map(
       ({ preview, original, description }) =>
-        `<div class="post-gallery__item">
-           <a href="./cards/${original}" class="post-gallery__link">
+        `<div class="gallery__item">
+           <a href="./cards/${original}" class="gallery__link">
              <img src="./cards/${preview}"
-               alt="${description}" class="post-gallery__image" />
+               alt="${description}" class="gallery__image" />
            </a>
          </div>`
     )
